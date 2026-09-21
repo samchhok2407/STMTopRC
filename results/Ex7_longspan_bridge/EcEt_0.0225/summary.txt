@@ -1,0 +1,18 @@
+Ex7d  --  long-span bridge, Ec/Et = 0.0225
+----------------------------------------
+source          : Zhang, Ramos Jr. & Paulino (2017), Struct Multidisc Optim 55:2045-2072, Example 2, Table 3
+units           : kN, m
+mesh            : 18 x 7
+Vmax            : 0.05
+load path Z/(PH): 48.7601
+objective J=-Pi : 29.484425
+active members  : 32
+displayed members: 26
+drawn load path : OK
+material volume : 0.05
+material Vfrac  : 1 (single bilinear material)
+filter alphaF   : 0.0001
+iterations      : 350
+converged       : true
+equil. residual : 1.21e-09
+equilibrium     : OK

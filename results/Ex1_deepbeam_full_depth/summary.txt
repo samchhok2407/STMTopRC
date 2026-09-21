@@ -1,0 +1,20 @@
+Ex1  --  deep beam, ties full depth, any angle
+----------------------------------------
+source          : Zhao et al. (2023), Fig. 1(d,f,h,j,l)
+units           : kip, in
+mesh            : 16 x 4
+Vmax            : 493.338  493.338
+load path Z/(PH): 7.7293
+objective J=-Pi : 0.001087
+active members  : 44
+displayed members: 31
+drawn load path : OK
+material 1 volume: 493.338086556
+material 1 Vfrac : 0.5
+material 2 volume: 493.338086556
+material 2 Vfrac : 0.5
+filter alphaF   : 0.0001
+iterations      : 716
+converged       : true
+equil. residual : 1.20e-10
+equilibrium     : OK

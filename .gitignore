@@ -1,0 +1,38 @@
+# MATLAB and generated binary outputs
+*.asv
+*.m~
+*.mex*
+slprj/
+**/results/**/*.mat
+**/results/**/*.fig
+
+# Local manuscripts, literature, and comparison notes
+/@STMTopRC_Paper/
+/SSRG_GSM_Paper_V2/
+*.pdf
+/benchmarks/
+**/results/paper_figures/
+/src_backup_*.zip
+/*.xlsx
+
+# Temporary verification, backups, and drafting
+/tmp/
+/output/
+*_PROMPT.txt
+STM_Prompt_*.txt
+Filtering structures out of ground structures.md
+
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS and sync artifacts
+Thumbs.db
+.DS_Store
+*-DESKTOP-*.*
+*-LAPTOP-*.*

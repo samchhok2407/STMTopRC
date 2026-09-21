@@ -1,0 +1,20 @@
+Ex2  --  deep beam, ties below 2H/3
+----------------------------------------
+source          : Zhao et al. (2023), Fig. 1(d,f,h,j,l)
+units           : kip, in
+mesh            : 12 x 3
+Vmax            : 190.381  190.381
+load path Z/(PH): 7.8750
+objective J=-Pi : 0.002915
+active members  : 26
+displayed members: 15
+drawn load path : OK
+material 1 volume: 190.380555785
+material 1 Vfrac : 0.5
+material 2 volume: 190.380555785
+material 2 Vfrac : 0.5
+filter alphaF   : 0.0001
+iterations      : 1544
+converged       : true
+equil. residual : 2.17e-11
+equilibrium     : OK

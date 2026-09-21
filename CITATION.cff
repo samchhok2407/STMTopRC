@@ -1,0 +1,119 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "STMTopRC: MATLAB code for multi-material, multi-volume strut-and-tie topology optimization of reinforced concrete"
+abstract: >-
+  Ground-structure topology optimization for strut-and-tie models (STM) of
+  reinforced concrete. Two one-sided bilinear materials - a tie stiff in
+  tension, a strut stiff in compression - share every bar, so the optimizer
+  chooses tie or strut from the sign of the stretch. Bar areas are updated with
+  a ZPR (Zhang-Paulino-Ramos) scheme supporting per-constraint volume budgets,
+  with optional controls on tie location, tie inclination and minimum member
+  length. The package is two source files - one that builds the ground
+  structure and decides a design, and one that measures, draws and saves -
+  plus three study runners. Base MATLAB only, no toolboxes.
+type: software
+version: 1.0.0
+date-released: "2026-09-16"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/samchhok2407/STMTopRC"
+
+authors:
+  - given-names: Samchhok
+    family-names: Tit
+    affiliation: "Department of Civil, Environmental and Architectural Engineering, Korea University, Seoul 02841, Korea"
+    email: samchhok_ku25@korea.ac.kr
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - given-names: Donghyuk
+    family-names: Jung
+    affiliation: "School of Civil, Environmental and Architectural Engineering, Korea University, Seoul 02841, Korea"
+    email: jungd@korea.ac.kr
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+
+keywords:
+  - topology optimization
+  - strut-and-tie model
+  - reinforced concrete
+  - ground structure
+  - multiple volume constraints
+  - MATLAB
+
+# The formulations this code implements.
+references:
+  - type: article
+    authors:
+      - family-names: Zhang
+        given-names: "Xiaojia Shelly"
+      - family-names: Paulino
+        given-names: "Glaucio H."
+      - family-names: "Ramos Jr."
+        given-names: "Adeildo S."
+    title: "Multi-material topology optimization with multiple volume constraints: a general approach applied to ground structures with material nonlinearity"
+    journal: "Structural and Multidisciplinary Optimization"
+    volume: 57
+    issue: 1
+    start: 161
+    end: 182
+    year: 2018
+    doi: "10.1007/s00158-017-1768-3"
+  - type: article
+    authors:
+      - family-names: "Ramos Jr."
+        given-names: "Adeildo S."
+      - family-names: Paulino
+        given-names: "Glaucio H."
+    title: "Filtering structures out of ground structures - a discrete filtering tool for structural design optimization"
+    journal: "Structural and Multidisciplinary Optimization"
+    volume: 54
+    issue: 1
+    start: 95
+    end: 116
+    year: 2016
+    doi: "10.1007/s00158-015-1390-1"
+  - type: article
+    authors:
+      - family-names: Zhao
+        given-names: Tuo
+      - family-names: Alshannaq
+        given-names: "Ammar A."
+      - family-names: Scott
+        given-names: "David W."
+      - family-names: Paulino
+        given-names: "Glaucio H."
+    title: "Strut-and-tie models using multi-material and multi-volume topology optimization: load path approach"
+    journal: "ACI Structural Journal"
+    volume: 120
+    issue: 6
+    start: 7
+    end: 22
+    year: 2023
+    doi: "10.14359/51739089"
+  - type: article
+    authors:
+      - family-names: Zhang
+        given-names: "Xiaojia Shelly"
+      - family-names: "Ramos Jr."
+        given-names: "Adeildo S."
+      - family-names: Paulino
+        given-names: "Glaucio H."
+    title: "Material nonlinear topology optimization using the ground structure method with a discrete filtering scheme"
+    journal: "Structural and Multidisciplinary Optimization"
+    volume: 55
+    issue: 6
+    start: 2045
+    end: 2072
+    year: 2017
+    doi: "10.1007/s00158-016-1627-7"
+  - type: article
+    authors:
+      - family-names: Groenwold
+        given-names: "Albert A."
+      - family-names: Etman
+        given-names: "L. F. P."
+    title: "On the equivalence of optimality criterion and sequential approximate optimization methods in the classical topology layout problem"
+    journal: "International Journal for Numerical Methods in Engineering"
+    volume: 73
+    issue: 3
+    start: 297
+    end: 316
+    year: 2008
+    doi: "10.1002/nme.2071"

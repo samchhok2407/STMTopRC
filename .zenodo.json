@@ -1,0 +1,26 @@
+{
+  "title": "STMTopRC: MATLAB code for multi-material, multi-volume strut-and-tie topology optimization of reinforced concrete",
+  "description": "<p>Ground-structure topology optimization for strut-and-tie models (STM) of reinforced concrete. Two one-sided bilinear materials &mdash; a tie stiff in tension, a strut stiff in compression &mdash; share every bar, so the optimizer chooses tie or strut from the sign of the stretch. Bar areas are updated with a ZPR (Zhang&ndash;Paulino&ndash;Ramos) scheme supporting per-constraint volume budgets, with optional controls on tie location, tie inclination and minimum member length.</p><p>The package is two source files &mdash; one that builds the ground structure and decides a design, and one that measures, draws and saves &mdash; plus three study runners that call them: a three-case validation against the ZPR source paper, a four-ratio reference comparison against a published long-span bridge, and a deep beam under five tie restrictions. Base MATLAB only, no toolboxes.</p>",
+  "upload_type": "software",
+  "license": "GPL-3.0-or-later",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Tit, Samchhok",
+      "affiliation": "Department of Civil, Environmental and Architectural Engineering, Korea University, Seoul, Korea"
+    },
+    {
+      "name": "Jung, Donghyuk",
+      "affiliation": "School of Civil, Environmental and Architectural Engineering, Korea University, Seoul, Korea"
+    }
+  ],
+  "keywords": [
+    "topology optimization",
+    "strut-and-tie model",
+    "reinforced concrete",
+    "ground structure",
+    "multiple volume constraints",
+    "MATLAB"
+  ]
+}
