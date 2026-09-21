@@ -13,9 +13,17 @@ abstract: >-
   plus three study runners. Base MATLAB only, no toolboxes.
 type: software
 version: 1.0.0
-date-released: "2026-09-16"
+date-released: "2026-09-21"
 license: GPL-3.0-or-later
 repository-code: "https://github.com/samchhok2407/STMTopRC"
+doi: "10.5281/zenodo.22877546"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22877545"
+    description: "Concept DOI - always resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.22877546"
+    description: "Version DOI - this release (v1.0.0)"
 
 authors:
   - given-names: Samchhok
