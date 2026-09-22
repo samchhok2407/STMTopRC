@@ -116,7 +116,7 @@ fire at all, and `maxIter` ends the run instead. `tolRel` is scale-free and is
 the right test when comparing models whose areas differ by orders of magnitude.
 Setting `tolOpt = 0` leaves `tolRel` in sole charge.
 
-The five `eta*` parameters rarely need touching. Reach for them only if a run
+The four `eta*` parameters rarely need touching. Reach for them only if a run
 oscillates without converging — or to pin damping off (`etaMin = etaMax = 0.5`,
 `etaInc = etaDec = 1`) when reproducing a source that uses a fixed OC exponent,
 as the bridge case does.
@@ -146,13 +146,6 @@ An angle `a` also allows `180-a`. Struts are never restricted. These act on
 which bars are *eligible* to carry the tie material, not on the sign of the
 converged force — which is why a layout can still show tension outside its
 permitted tie region, carried there by a strut.
-
-## Live animation — removed
-
-`animate`, `showGround`, `animateEvery` and `groundPause` no longer exist. The
-live-view window was display only and never touched a reported number; it was
-removed on 9 September 2026. A run prints its iteration table as it goes and
-draws the final layout when `doPlot` is true.
 
 ## Output
 
@@ -187,7 +180,7 @@ same area in all of them. Two settings then govern how that scale is spent:
   that draws as hairlines at the width a single figure would use.
 - **`plotWidthGamma`** — how the width is distributed across the range. `1`
   makes width proportional to area; below `1` it lifts the light end, so a panel
-  far below the set's maximum still reads instead of looking empty. Any value is
+  far below the set's maximum still reads instead of looking empty. Any positive value is
   monotone, so a thicker line still means a larger area within a panel and
   between panels; proportionality is what is given up, which is why widths on a
   shared scale are read as an ordering rather than measured.

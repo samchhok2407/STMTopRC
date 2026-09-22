@@ -4,16 +4,16 @@ source          : Zhang, Paulino & Ramos Jr. (2018), Example 1
 units           : kN, m
 mesh            : 30 x 10
 Vmax            : 0.15
-objective J=-Pi : 1.136426
-active members  : 97
+objective J=-Pi : 1.136368
+active members  : 111
 displayed members: 48
 drawn load path : OK
-material 1 volume: 0.0932694118175
-material 1 Vfrac : 0.621796078783
-material 2 volume: 0.0567305881825
-material 2 Vfrac : 0.378203921217
-filter alphaF   : 0.001
-iterations      : 411
+material 1 volume: 0.0934470857828
+material 1 Vfrac : 0.622980571885
+material 2 volume: 0.0565529142172
+material 2 Vfrac : 0.377019428115
+filter alphaF   : 0.0001
+iterations      : 501
 converged       : true
-equil. residual : 3.63e-10
+equil. residual : 1.00e-09
 equilibrium     : OK

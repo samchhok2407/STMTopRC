@@ -1,5 +1,7 @@
 # STMTopRC
 
+Release **v1.0.0 - 2026-09-22**.
+
 MATLAB ground-structure topology optimization for reinforced-concrete strut-and-tie models. Bilinear axial materials, grouped volume constraints, ZPR area updates, discrete filtering, and tie location/angle restrictions support research and teaching. The package does not perform RC strength, anchorage, nodal-zone, or detailing checks.
 
 This repository accompanies the manuscript *Ground-structure topology
@@ -43,8 +45,8 @@ beam = run_deepbeam_Ex1_to_Ex5(true);     % five deep-beam cases
 bridge = run_bridge_Ex7a_to_Ex7d(true);   % four bridge cases
 ```
 
-These are the three study entry points for the manuscript. Omit `true` from
-the deep-beam or bridge call to run only its first case. Runners do not clear
+These are the three study entry points for the manuscript. All cases run by default. Pass `false` to
+the deep-beam or bridge function to run only its first case. Runners do not clear
 the caller's workspace and return cell arrays of result structures; for
 example, `panel{1}.J` gives the first panel's objective.
 
@@ -138,7 +140,7 @@ width follows the square root of area.
 
 Optimization convergence, physical equilibrium, volume feasibility, and displayed connectivity are distinct checks. Connectivity does not establish stability or capacity. `S.Z` is normalized by `P*height`; `Results.loadPath` returns the dimensional force-length sum. The bridge's reference P is 40 kN per loaded node, not its 360 kN total.
 
-Panel objectives are checked against printed published targets; shared-budget fractions do not exactly match. Deep beams demonstrate restrictions. The bridge uses an inferred budget and is a reference comparison.
+The three panel objectives agree with published targets within 0.045%; two match at printed precision. Shared-budget fractions are 0.6230/0.3770 rather than 0.63/0.37. Deep beams demonstrate restrictions. The bridge uses an inferred budget and is a reference comparison.
 
 | Result field | Meaning |
 |---|---|
@@ -171,7 +173,7 @@ Zero moduli use `inactiveFactor=1e-6` soft branches. Tie restrictions apply to m
 | [Parameters](docs/parameter_guide.md) | Inputs, defaults and units |
 | [Algorithms](docs/engine_notes.md) | Numerical implementation |
 | [Runner notes](docs/runner_notes.md) | Study assumptions |
-| [Study settings](docs/examples.md) | Model definitions and historical results |
+| [Study settings](docs/examples.md) | Model definitions and verified results |
 | [Reproducibility](docs/reproducibility.md) | Environment, execution, checks and retained data |
 | [Troubleshooting](docs/troubleshooting.md) | Common symptoms and corrective steps |
 | [Results](results/) | Computed layouts, summaries and verification table |

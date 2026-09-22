@@ -13,7 +13,7 @@ abstract: >-
   plus three study runners. Base MATLAB only, no toolboxes.
 type: software
 version: 1.0.0
-date-released: "2026-09-21"
+date-released: "2026-09-22"
 license: GPL-3.0-or-later
 repository-code: "https://github.com/samchhok2407/STMTopRC"
 doi: "10.5281/zenodo.22877546"

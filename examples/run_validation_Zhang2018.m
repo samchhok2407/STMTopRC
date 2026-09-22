@@ -35,7 +35,7 @@ p.x0        = 0.01;
 p.volGroups = 1;
 p.Vmax      = Vmax;
 p.maxIter   = 1000;
-p.alphaF    = 1e-3;  p.Nfilter = 1;
+p.alphaF    = 1e-4;  p.Nfilter = 1;
 p.barColor  = [0.545 0.353 0.169];      % the paper's single-material colour
 p.label     = 'Zhang2018 Fig. 7(c)  --  1 material, 1 volume constraint';
 p.resultDir = 'Zhang2018_Fig7c';
@@ -49,7 +49,7 @@ p.x0        = [0.01 0.01];
 p.volGroups = [1 1];                    % both in constraint 1: one shared budget
 p.Vmax      = Vmax;
 p.maxIter   = 1000;
-p.alphaF    = 1e-3;  p.Nfilter = 1;
+p.alphaF    = 1e-4;  p.Nfilter = 1;
 p.label     = 'Zhang2018 Fig. 8(c)  --  2 materials, 1 volume constraint';
 p.resultDir = 'Zhang2018_Fig8c';
 if ~isempty(outRoot), p.resultDir = fullfile(outRoot,p.resultDir); end
@@ -62,7 +62,7 @@ p.x0        = [0.01 0.01];
 p.volGroups = [1 2];                    % one budget per material
 p.Vmax      = [0.5 0.5]*Vmax;
 p.maxIter   = 1000;
-p.alphaF    = 1e-6;  p.Nfilter = 1;     % 1000x finer filter than the other two
+p.alphaF    = 1e-4;  p.Nfilter = 1;     % same filter in all three cases
 p.label     = 'Zhang2018 Fig. 8(d)  --  2 materials, 2 volume constraints';
 p.resultDir = 'Zhang2018_Fig8d';
 if ~isempty(outRoot), p.resultDir = fullfile(outRoot,p.resultDir); end

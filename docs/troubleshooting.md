@@ -7,7 +7,7 @@ explicitly stated. These notes concern the current three study functions.
 |---|---|---|
 | Study function is undefined | Current folder and MATLAB path | Run `addpath(fullfile(pwd,'examples'))` from the repository root. Use `which run_validation_Zhang2018 -all` to detect another copy. |
 | `Engine` or `Results` is undefined in a custom script | Source path | Add `fullfile(pwd,'src')`; supplied studies do this themselves. |
-| Only one deep-beam or bridge case runs | Function argument | Pass `true` to select the complete study. |
+| Only one deep-beam or bridge case runs | Function argument | Pass `true` or omit the argument to select the complete study; `false` selects only the first case. |
 | Missing or unknown parameter error | Field names and required inputs | Check `width`, `height`, `nx`, `ny`, `P`, `Emod`, `x0`, `maxIter` and the parameter guide. Correct the input rather than suppressing the error. |
 | A support or force acts at an unexpected node | Grid spacing and supplied coordinates | Inspect `S.NODE`, `S.suppNodes`, `S.loadNodes` and `S.Fext`. In-domain coordinates snap to the nearest grid node. |
 | Changing the mesh changes the physical budget | Automatic `Vmax` | Specify explicit physical budgets for a controlled mesh comparison. Automatic budgets depend on total candidate length. |
