@@ -1,5 +1,6 @@
 function selftest_release()
 % Regression checks for model input and asymmetric restraints.
+% SPDX-License-Identifier: GPL-3.0-or-later
 addpath(fullfile(fileparts(mfilename('fullpath')),'..','src'));
 selftest_ZhaoAppendixB;
 p = struct('width',60,'height',15,'nx',8,'ny',2,'P',1, ...

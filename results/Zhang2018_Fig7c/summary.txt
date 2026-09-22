@@ -4,14 +4,14 @@ source          : Zhang, Paulino & Ramos Jr. (2018), Example 1
 units           : kN, m
 mesh            : 30 x 10
 Vmax            : 0.15
-objective J=-Pi : 1.136401
-active members  : 103
+objective J=-Pi : 1.136417
+active members  : 97
 displayed members: 48
 drawn load path : OK
 material volume : 0.15
 material Vfrac  : 1 (single bilinear material)
 filter alphaF   : 0.001
-iterations      : 455
+iterations      : 417
 converged       : true
-equil. residual : 2.17e-10
+equil. residual : 3.49e-10
 equilibrium     : OK

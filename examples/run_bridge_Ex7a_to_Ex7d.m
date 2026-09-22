@@ -1,8 +1,8 @@
 function runs = run_bridge_Ex7a_to_Ex7d(allCases,outRoot)
 %RUN_BRIDGE_EX7A_TO_EX7D - Long-span bridge modulus sweep, Zhang et al. (2017).
-%   Pass true as the first argument to run every case.
+%   Pass false as the first argument to run only the first case.
 % SPDX-License-Identifier: GPL-3.0-or-later
-if nargin<1, allCases = false; end
+if nargin<1, allCases = true; end
 if nargin<2, outRoot = ''; end
 addpath(fullfile(fileparts(mfilename('fullpath')), '..', 'src'));
 runs = {};      % every block that runs appends one entry here
@@ -10,7 +10,6 @@ runs = {};      % every block that runs appends one entry here
 %% ===== COMMON SETUP =====================================================
 %  Identical for every block below; only Emod(2) changes.
 Et = 7e7;               % kN/m^2, tension modulus, the same in every block
-
 common = struct();
 common.width = 20; common.height = 5; common.P = 40;
 common.x0 = 9.456817e-7;
@@ -27,20 +26,16 @@ common.supports = [xs, zeros(numel(xs),1), ones(numel(xs),2)];
 xl = xAll((5:13) + 1); % nine loaded nodes across the deck
 common.loads = [xl, zeros(numel(xl),1), zeros(numel(xl),1), -common.P*ones(numel(xl),1)];
 common.maxIter   = 6000;
-common.alphaF    = 1e-4;                % the paper's stated filter level
+common.alphaF    = 1e-4;                
 common.Nfilter   = 1;
 %  Everything else is the Engine default and is not restated here: gsLevel = Inf
-%  (all-pairs), alpha = 1.0, tolOpt = 1e-9, tolRel = 0, doPlot = true.
-%  plotShowFrac differs per block, so each block states its own.
 
 
 %% ===== Ex7a  Material 1,  Ec/Et = 1 ======================== Fig. 13(a) ==
-%    Stiff in compression: the answer is arch-like.
 p = bridgeCase(common, Et, 1.0, 'Ex7a');
 p.plotShowFrac = 0.01;
 if ~isempty(outRoot), p.resultDir = fullfile(outRoot,p.resultDir); end
 runTimer = tic; runs{end+1} = Engine(p); runs{end}.elapsedSeconds = toc(runTimer);
-
 
 if allCases
 %% ===== Ex7b  Material 2,  Ec/Et = 0.09 ===================== Fig. 13(b) ==
@@ -48,7 +43,6 @@ p = bridgeCase(common, Et, 0.09, 'Ex7b');
 p.plotShowFrac = 0.005;
 if ~isempty(outRoot), p.resultDir = fullfile(outRoot,p.resultDir); end
 runTimer = tic; runs{end+1} = Engine(p); runs{end}.elapsedSeconds = toc(runTimer);
-
 
 %% ===== Ex7c  Material 3,  Ec/Et = 0.04 ===================== Fig. 13(c) ==
 p = bridgeCase(common, Et, 0.04, 'Ex7c');
@@ -58,7 +52,6 @@ runTimer = tic; runs{end+1} = Engine(p); runs{end}.elapsedSeconds = toc(runTimer
 
 
 %% ===== Ex7d  Material 4,  Ec/Et = 0.0225 =================== Fig. 13(d) ==
-%    Soft in compression: the arch gives way to a suspension-like system.
 p = bridgeCase(common, Et, 0.0225, 'Ex7d');
 p.plotShowFrac = 0.001;
 if ~isempty(outRoot), p.resultDir = fullfile(outRoot,p.resultDir); end
@@ -68,11 +61,9 @@ runTimer = tic; runs{end+1} = Engine(p); runs{end}.elapsedSeconds = toc(runTimer
 end
 
 %% ===== ONE LINE-WIDTH SCALE OVER THE BLOCKS THAT RAN ====================
-
 if numel(runs) > 1
     Results.rescale(runs, 'maxWidth', 8, 'gamma', 0.5);
 end
-
 
 %% ===== READING THE RESULTS ==============================================
 %  Cross-case tables -- the arch-to-suspension transition, tension against

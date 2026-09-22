@@ -1,7 +1,7 @@
 Case,J,Z,Active,Displayed,Iterations,Seconds,Residual,Converged,Equilibrium,Connectivity,VolumeOK
-"Zhang2018 Fig. 7(c)  --  1 material, 1 volume constraint",1.13640063555151,NaN,103,48,455,16.2187073,2.17323928812768e-10,1,1,1,1
-"Zhang2018 Fig. 8(c)  --  2 materials, 1 volume constraint",1.13642585757598,NaN,97,48,411,22.8486105,3.62673839521628e-10,1,1,1,1
-"Zhang2018 Fig. 8(d)  --  2 materials, 2 volume constraints",1.17935063918256,NaN,175,73,584,51.7052119,3.25368913274894e-10,1,1,1,1
+"Zhang2018 Fig. 7(c)  --  1 material, 1 volume constraint",1.13641719465774,NaN,97,48,417,32.9763314,3.49066758860818e-10,1,1,1,1
+"Zhang2018 Fig. 8(c)  --  2 materials, 1 volume constraint",1.13642585757598,NaN,97,48,411,28.8617777,3.62673839521628e-10,1,1,1,1
+"Zhang2018 Fig. 8(d)  --  2 materials, 2 volume constraints",1.17935063918256,NaN,175,73,584,54.5980684,3.25368913274894e-10,1,1,1,1
 "Ex1  --  deep beam, ties full depth, any angle",0.00108740500420607,7.72930194806873,44,31,716,7.0462159,1.19951597963758e-10,1,1,1,1
 "Ex2  --  deep beam, ties below 2H/3",0.00291500050117302,7.87500000001089,26,15,1544,6.892024,2.17178671954553e-11,1,1,1,1
 "Ex3  --  deep beam, ties below H/2",0.001118734724952,7.85119047621427,40,27,452,4.615412,5.63925525577452e-11,1,1,1,1
