@@ -1,0 +1,18 @@
+Zhang2018 Fig. 7(c)  --  1 material, 1 volume constraint
+----------------------------------------
+source          : Zhang, Paulino & Ramos Jr. (2018), Example 1
+units           : kN, m
+mesh            : 30 x 10
+Vmax            : 0.15
+objective J=-Pi : 1.136422
+active members  : 103
+displayed members: 48
+drawn load path : OK
+material volume : 0.15
+material Vfrac  : 1 (single bilinear material)
+filter alphaF   : 0.0001
+iterations      : 418
+converged       : true
+run time (s)    : 17.6
+equil. residual : 5.11e-10
+equilibrium     : OK

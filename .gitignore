@@ -1,0 +1,14 @@
+# MATLAB autosave and build products
+*.asv
+*.m~
+*.mex*
+slprj/
+
+# Run logs and temporary output
+*.log
+/tmp/
+/output/
+
+# OS artifacts
+Thumbs.db
+.DS_Store

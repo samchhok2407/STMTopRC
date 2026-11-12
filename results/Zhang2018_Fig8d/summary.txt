@@ -1,0 +1,20 @@
+Zhang2018 Fig. 8(d)  --  2 materials, 2 volume constraints
+----------------------------------------
+source          : Zhang, Paulino & Ramos Jr. (2018), Example 1
+units           : kN, m
+mesh            : 30 x 10
+Vmax            : 0.075  0.075
+objective J=-Pi : 1.179498
+active members  : 123
+displayed members: 70
+drawn load path : OK
+material 1 volume: 0.075
+material 1 Vfrac : 0.5
+material 2 volume: 0.075
+material 2 Vfrac : 0.5
+filter alphaF   : 0.0001
+iterations      : 450
+converged       : true
+run time (s)    : 23.1
+equil. residual : 6.98e-10
+equilibrium     : OK

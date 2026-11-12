@@ -1,0 +1,22 @@
+RC beam with four holes
+----------------------------------------
+source          : Starcev-Curcin et al. (2016), Tehnicki vjesnik 23(1), Table 3 / Fig. 10
+units           : kN, mm
+mesh            : 18 x 3
+domain          : 4-corner outline, 4 opening(s), 76 nodes
+Vmax            : 1.4494e+07  1.4494e+07
+load path Z/(PH): 28.6000
+objective J=-Pi : 4540.638426
+active members  : 56
+displayed members: 23
+drawn load path : OK
+material 1 volume: 14493961.822
+material 1 Vfrac : 0.5
+material 2 volume: 14493961.822
+material 2 Vfrac : 0.5
+filter alphaF   : 0.0001
+iterations      : 356
+converged       : true
+run time (s)    : 2.0
+equil. residual : 7.91e-13
+equilibrium     : OK

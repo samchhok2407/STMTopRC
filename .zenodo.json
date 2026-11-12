@@ -1,0 +1,27 @@
+{
+  "title": "STMTopRC: A MATLAB package for ground-structure topology optimization of reinforced-concrete strut-and-tie models",
+  "description": "<p>STMTopRC is an open-source, case-based, and regression-tested MATLAB implementation of the established multi-material and grouped-volume ground-structure framework for conceptual strut-and-tie model generation. The package separates problem definition from the core solver and supports tie-region and tie-angle controls, load-path evaluation, automated reporting, and one-command reproduction of the examples. Published benchmarks and component-level tests verify the optimizer, state solver, analytical sensitivities, symmetry treatment, and load-path calculation. Its explicit equation-to-code mapping, executable examples, and self-tests support reproducible research, methodological extension, and code-based instruction.</p>",
+  "upload_type": "software",
+  "license": "GPL-3.0-or-later",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Tit, Samchhok",
+      "affiliation": "Department of Civil, Environmental and Architectural Engineering, Korea University, Seoul, Korea"
+    },
+    {
+      "name": "Jung, Donghyuk",
+      "affiliation": "School of Civil, Environmental and Architectural Engineering, Korea University, Seoul, Korea"
+    }
+  ],
+  "keywords": [
+    "topology optimization",
+    "strut-and-tie model",
+    "reinforced concrete",
+    "ground structure",
+    "multiple volume constraints",
+    "MATLAB"
+  ],
+  "publication_date": "2026-11-12"
+}

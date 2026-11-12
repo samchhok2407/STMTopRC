@@ -1,0 +1,22 @@
+RC deep beam with one hole
+----------------------------------------
+source          : Starcev-Curcin et al. (2016), Tehnicki vjesnik 23(1), Table 1 / Fig. 8
+units           : kN, mm
+mesh            : 8 x 4
+domain          : 4-corner outline, 1 opening(s), 45 nodes
+Vmax            : 7.80919e+06  7.80919e+06
+load path Z/(PH): 5.3333
+objective J=-Pi : 458517.371787
+active members  : 258
+displayed members: 7
+drawn load path : OK
+material 1 volume: 7809186.07779
+material 1 Vfrac : 0.5
+material 2 volume: 7809186.07779
+material 2 Vfrac : 0.5
+filter alphaF   : 0.0001
+iterations      : 145
+converged       : true
+run time (s)    : 0.5
+equil. residual : 1.54e-13
+equilibrium     : OK

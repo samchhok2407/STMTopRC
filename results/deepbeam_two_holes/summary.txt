@@ -1,0 +1,22 @@
+RC deep beam with two holes (W1)
+----------------------------------------
+source          : Starcev-Curcin et al. (2020), Appl. Sci. 10, 6217, Fig. 6 (W1)
+units           : kN, mm
+mesh            : 9 x 6
+domain          : 4-corner outline, 2 opening(s), 68 nodes
+Vmax            : 4.19737e+06  4.19737e+06
+load path Z/(PH): 3.7143
+objective J=-Pi : 458.009413
+active members  : 33
+displayed members: 17
+drawn load path : OK
+material 1 volume: 4197366.08889
+material 1 Vfrac : 0.5
+material 2 volume: 4197366.08889
+material 2 Vfrac : 0.5
+filter alphaF   : 0.0001
+iterations      : 570
+converged       : true
+run time (s)    : 2.6
+equil. residual : 7.60e-13
+equilibrium     : OK
